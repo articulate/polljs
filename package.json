@@ -8,12 +8,13 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "yarn tsc",
+    "build": "babel --out-file build/index.js src/index.ts",
     "test:cli": "jest",
     "test:watch": "jest --watchAll",
     "lint": "eslint . --ext .ts"
   },
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-typescript": "^7.16.0",
